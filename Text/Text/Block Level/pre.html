@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>로컬 스토리지(Local Storage>를 저장하는 함수 :</title>
+    </head>
+    <body>
+        <h3>로컬 스토리지(Local Storage)를 저장하는 함수 : </h3>
+
+        <!-- <pre>태그 -->
+        <!--
+            입력한 그대로 화면에 표시.
+            화면 낭독기와 같은 보조 프로그램은 해당 부분을 무시함.
+        -->
+        <pre>
+            function savetheLocal(){
+                var second = document.getElementById("second");
+                var thevalue = second.value;
+                localStorage.setItem(1, thevalue);
+                gettheLocal();
+            }
+        </pre>
+    </body>
+</html>
